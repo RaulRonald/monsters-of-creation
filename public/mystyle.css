@@ -1,10 +1,9 @@
 ﻿/* BACKGROUND */
 body {
-    background: #7F1400;
-    width: 100%;
+    background-color: #7F1400;
 }
 
-body, nav ul {
+body {
     margin: 0;
     padding: 0;
 }
@@ -12,124 +11,80 @@ body, nav ul {
 .invisible {
     display: none;
 }
-
+/*parte superior*/
 .alltop {
     background-color: #008049;
-    z-index: 2;
-}
-
-.hud::after {
-    content: "";
-    display: table;
-    clear: both;
-    z-index: 2;
-}
-
-.hud {
-    background-color: #008049;
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    margin-bottom: 0;
     position: relative;
-    width: auto;
-    border-left: 12.5vw solid #008049;
-    border-right: 12.5vw solid #008049;
+    z-index: 2;
 }
 
-    .hud nav ul li {
-        list-style-type: none;
+.headboard {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: auto;
+}
+
+    .profile, .headboard h1, .socialmidias {
+        float: left;
+        margin-inline: 1%;
     }
 
-.profile img {
-    transition: transform 0.3s ease;
-    transform: scale(1.5);
-}
+    .headboard h1 {
+        width: auto;
+        margin-left: 2.5%;
+        font-family: Impact;
+    }
 
 .profile {
-    background-color: #008049;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-    width: auto;
+    margin-left: 5%;
 }
 
-.gameslink {
-    float: left;
-    box-sizing: border-box;
-    margin-left: 2%;
-    margin-top: 1%;
-    background: white;
-    padding: 0.5%;
-    width: 18%;
-    text-align: center;
-}
-
-.homelink, .updateslink, .bloglink, .artslink {
-    float: left;
-    box-sizing: border-box;
-    margin-left: 2%;
-    margin-top: 1%;
-    padding: 0.5%;
-    width: 18%;
-    text-align: center;
-}
-
-.twitterlink, .youtubelink, .instagramlink {
-    float: left;
-    box-sizing: border-box;
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
-    .twitterlink img, .youtubelink img, .instagramlink img {
-        width: 50px;
-        height: 50px;
+    .profile img {
+        width: auto;
+        height: auto;
     }
 
-.gameslink a {
-    text-decoration-line: none;
-    font-family: 'Trebuchet MS';
-    font-size: xx-large;
-    color: black;
-    position: static;
+.socialmidias {
+    margin-left: auto;
+    width: auto;
+    display: flex;
 }
 
-.homelink a, .bloglink a, .updateslink a, .artslink a {
-    text-decoration-line: none;
-    font-family: 'Trebuchet MS';
-    font-size: xx-large;
-    color: white;
-}
+    .socialmidias ul li {
+        list-style-type: none;
+        float: left;
+        width: auto;
+        margin-inline: 10px;
+    }
 
-.content {
-    border-left: 5vw solid black;
-    border-right: 5vw solid black;
-    border-bottom: 25vw solid black;
-    overflow: auto;
-}
-
+        .socialmidias ul li img {
+            width: 50px;
+            height: 50px;
+        }
+/*main*/
 main {
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -30px;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+    background-color: #4778D4;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
 }
 .game-container {
     width: auto;
 }
-.buttons {
-    display: none;
-}
-@media only screen and (max-width: 1080px) {
-    .content {
-        border: none;
-    }
-    .buttons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .upbutton, .downbutton {
-        padding: 120px 120px;
-    }
-}
+
 

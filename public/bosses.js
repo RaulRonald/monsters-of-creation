@@ -66,7 +66,7 @@ export class Boss0 extends Phaser.Scene {
             }
         }, this);
         //monster configs
-        this.maxlife = 1000;
+        this.maxlife = 5000;
         this.life = this.maxlife;
         this.speed = 1;
         this.cure = 1;
