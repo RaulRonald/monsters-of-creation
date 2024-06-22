@@ -19,7 +19,7 @@ export class Mainmenu extends Phaser.Scene {
         let Button0 = new Button(this, 115, 100, 'startbutton0', '', () => { });
         let Button1 = new Button(this, 115, 250, 'startbutton1', '', () => { });
         let Button2 = new Button(this, 115, 400, 'startbutton2', '', () => { });
-        let Button3 = new Button(this, 850, 420, 'startbutton3', '', () => { referencia.scene.start('boss0'); });
+        let Button3 = new Button(this, 850, 420, 'startbutton3', '', () => { referencia.scene.start('whoprigon'); });
     }
 
     update() {

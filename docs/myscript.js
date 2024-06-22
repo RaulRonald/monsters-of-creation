@@ -1,6 +1,7 @@
 import { Mainmenu } from "./mainmenu.js";
 import { Tutorial } from "./tutorial.js";
 import { Boss0 } from "./bosses.js";
+import { Whoprigon } from "./whoprigon.js";
 // definição da tela do jogo
 var config = {
     type: Phaser.AUTO,
@@ -14,6 +15,7 @@ var config = {
 export var game = new Phaser.Game(config);
 //adicionando cenas ao game
 game.scene.add('mainmenu', new Mainmenu());
+game.scene.add('whoprigon', new Whoprigon());
 game.scene.add('tutorial', new Tutorial());
 game.scene.add('boss0', new Boss0());
 //iniciandio a primeira cena
